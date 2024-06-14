@@ -25,6 +25,7 @@ def delete(head, point):
             current.next = k.next
             break
     return head
+
 arr = []
 for i in range(int(input())):
     arr.append(int(input()))

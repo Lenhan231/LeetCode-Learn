@@ -22,6 +22,7 @@ def delete(head, point):
             count += 1
         else:
             return current.next
+         
 arr = []
 for i in range(int(input())):
     arr.append(int(input()))
