@@ -1,0 +1,14 @@
+nums = [3,2,1,2,1,7]
+
+dp = [0]*(max(nums)+ 1)
+for num in nums:
+    dp[num] += 1
+
+count = 0
+for i in range(len(dp)-1):
+    if dp[i] > 1:
+        count += dp[i]-1
+        dp[i+1] += (dp[i]-1)
+count += dp[-1]*(dp[-1]-1)//2
+
+print(count)  
